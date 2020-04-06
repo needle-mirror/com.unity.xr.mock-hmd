@@ -4,6 +4,10 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.1-preview.3] - 2020-04-07
+
+ * Updated dependency: `com.unity.xr.management` 3.0.6 -> 3.2.4
+
 ## [1.0.0-preview.2] - 2020-04-06
 
  * Fix render mode settings not being picked up on entering play mode
@@ -28,6 +32,5 @@ Fixed missing meta files issue.
 
 ## [0.1.0-preview.1] - 2019-08-02
 
-### This is the first release of *Starter Kit \<com.unity.xr.starter-kit\>*.
+### This is the first release of *Mock HMD XR Plugin \<com.unity.xr.mock-hmd\>*.
 
-*Short description of this release*
