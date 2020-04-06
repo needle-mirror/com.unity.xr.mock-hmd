@@ -35,7 +35,7 @@ namespace Unity.XR.MockHMD
         public RenderMode renderMode;
 
         /// <summary>
-        /// Runtime access to build settings. 
+        /// Runtime access to build settings.
         /// </summary>
         public static MockHMDBuildSettings Instance
         {
@@ -45,7 +45,7 @@ namespace Unity.XR.MockHMD
 #if UNITY_EDITOR
                 UnityEngine.Object obj = null;
                 UnityEditor.EditorBuildSettings.TryGetConfigObject(BuildSettingsKey, out obj);
-                if (obj == null || !obj is MockHMDBuildSettings)
+                if (obj == null || !(obj is MockHMDBuildSettings))
                     return null;
                 settings = (MockHMDBuildSettings) obj;
 #else
