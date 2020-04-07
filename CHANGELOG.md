@@ -4,6 +4,10 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.1-preview.5] - 2020-04-08
+
+ * Macro around XR Management 3.2 features.
+
 ## [1.0.1-preview.4] - 2020-04-07
 
  * Fix `error CS0184: The given expression is never of the provided ('MockHMDBuildSettings') type`

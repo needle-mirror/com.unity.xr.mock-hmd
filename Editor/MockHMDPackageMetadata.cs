@@ -1,3 +1,4 @@
+#if XR_MGMT_320
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.XR.Management.Metadata;
@@ -45,3 +46,4 @@ namespace Unity.XR.MockHMD.Editor
         }
     }
 }
+#endif
