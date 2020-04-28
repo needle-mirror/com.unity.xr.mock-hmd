@@ -26,6 +26,7 @@ namespace Unity.XR.MockHMD.Editor
             private static readonly List<BuildTargetGroup> s_SupportedBuildTargets = new List<BuildTargetGroup>()
             {
                 BuildTargetGroup.Standalone,
+                BuildTargetGroup.Android,
             };
             public List<BuildTargetGroup> supportedBuildTargets => s_SupportedBuildTargets;
         }
