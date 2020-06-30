@@ -4,6 +4,11 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.1.0-preview.1] - 2020-06-30
+
+ * Adds the ability to add multiple render passes to the XR renderer, configure render pass properties enable/disable render passes dynamically.
+ * Adds a debug view that shows the render textures for the render passes. This should support all texture types (MP, SPI, single texture) so you can see what the render pass renders.
+
 ## [1.0.1-preview.7] - 2020-04-29
 
  * Enable Android support.
