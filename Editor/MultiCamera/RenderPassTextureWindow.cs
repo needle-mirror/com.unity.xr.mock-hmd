@@ -138,7 +138,7 @@ namespace MockHMD.Editor.MultiCamera
                 if (displaySubsystem == null)
                     return;
 
-#if !UNITY_20202_2_OR_NEWER
+#if !UNITY_2020_2_OR_NEWER
                 if (displaySubsystem.disableLegacyRenderer)
                     return;
 #endif

@@ -1,7 +1,7 @@
 {
   "name": "com.unity.xr.mock-hmd",
   "displayName": "MockHMD XR Plugin",
-  "version": "1.1.1-preview.1",
+  "version": "1.1.2-preview.1",
   "unity": "2019.3",
   "description": "Provides rendering and input support for XR MockHMD.",
   "keywords": [
@@ -14,11 +14,11 @@
     "com.unity.xr.management": "3.0.6"
   },
   "upmCi": {
-    "footprint": "53b2d6ef8941b96b273ff9dfb8a5ece5825fd739"
+    "footprint": "ce0c7b87cd5511b0f3c5c7ba6c1fdfc85c275352"
   },
   "repository": {
     "url": "https://github.cds.internal.unity3d.com/unity/xr.sdk.mock-hmd.git",
     "type": "git",
-    "revision": "f3669f6bb1f7deb337b733a015027e67ce7bfde1"
+    "revision": "5f54b3f5cb2e435ab662b6dde4202d7b9ba1bc91"
   }
 }
