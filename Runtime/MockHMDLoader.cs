@@ -16,6 +16,7 @@ namespace Unity.XR.MockHMD
         private static List<XRInputSubsystemDescriptor> s_InputSubsystemDescriptors =
             new List<XRInputSubsystemDescriptor>();
 
+        /// <inheritdoc />
         public override bool Initialize()
         {
             CreateSubsystem<XRDisplaySubsystemDescriptor, XRDisplaySubsystem>(s_DisplaySubsystemDescriptors, "MockHMD Display");
@@ -30,6 +31,7 @@ namespace Unity.XR.MockHMD
             return true;
         }
 
+        /// <inheritdoc />
         public override bool Start()
         {
             StartSubsystem<XRDisplaySubsystem>();
@@ -37,6 +39,7 @@ namespace Unity.XR.MockHMD
             return true;
         }
 
+        /// <inheritdoc />
         public override bool Stop()
         {
             StopSubsystem<XRInputSubsystem>();
@@ -44,6 +47,7 @@ namespace Unity.XR.MockHMD
             return true;
         }
 
+        /// <inheritdoc />
         public override bool Deinitialize()
         {
             DestroySubsystem<XRInputSubsystem>();

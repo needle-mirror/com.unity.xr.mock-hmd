@@ -11,6 +11,9 @@ namespace Unity.XR.MockHMD
     [XRConfigurationData("MockHMD", MockHMDBuildSettings.BuildSettingsKey)]
     public class MockHMDBuildSettings : ScriptableObject
     {
+        /// <summary>
+        /// Key that build settings are indexed by in EditorBuildSettings.
+        /// </summary>
         public const string BuildSettingsKey = "xr.sdk.mock-hmd.settings";
 
         /// <summary>

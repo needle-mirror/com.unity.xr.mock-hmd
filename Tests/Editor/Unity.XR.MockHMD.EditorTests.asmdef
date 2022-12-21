@@ -1,8 +1,8 @@
 {
-    "name": "Unity.[SubGroup].[YourPackageName].EditorTests",
+    "name": "Unity.XR.MockHMD.EditorTests",
     "references": [
-        "Unity.[SubGroup].[YourPackageName].Editor",
-        "Unity.[SubGroup].[YourPackageName]"
+        "Unity.XR.MockHMD.Editor",
+        "Unity.XR.MockHMD"
     ],
     "optionalUnityReferences": [
         "TestAssemblies"
