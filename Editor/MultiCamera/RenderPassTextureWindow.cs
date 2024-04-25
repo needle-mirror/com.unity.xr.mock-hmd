@@ -36,7 +36,7 @@ namespace MockHMD.Editor.MultiCamera
        XRDisplaySubsystem GetXRDisplaySubsystem()
         {
             XRDisplaySubsystem ret = null;
-            SubsystemManager.GetInstances<XRDisplaySubsystem>(s_displaySubsystems);
+            SubsystemManager.GetSubsystems<XRDisplaySubsystem>(s_displaySubsystems);
             if (s_displaySubsystems.Count > 0)
             {
                 ret = s_displaySubsystems[0];

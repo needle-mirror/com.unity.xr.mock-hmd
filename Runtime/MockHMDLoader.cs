@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using UnityEngine.Experimental.XR;
 using UnityEngine.XR;
 using UnityEngine.XR.Management;
 
@@ -26,6 +25,8 @@ namespace Unity.XR.MockHMD
             if (buildSettings != null)
             {
                 MockHMD.SetRenderMode(buildSettings.renderMode);
+                MockHMD.SetFoveationMode(buildSettings.foveationEnabled, 
+                                         (uint)buildSettings.gazeSimulationMode);
             }
 
             return true;
