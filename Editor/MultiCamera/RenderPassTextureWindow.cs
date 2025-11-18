@@ -1,4 +1,3 @@
-#if UNITY_2020_2_OR_NEWER
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,6 +10,9 @@ using UnityEditor;
 
 namespace MockHMD.Editor.MultiCamera
 {
+    /// <summary>
+    /// Editor window for displaying render pass textures from the mock HMD.
+    /// </summary>
     public class RenderPassTextureWindow : EditorWindow
     {
 
@@ -25,9 +27,11 @@ namespace MockHMD.Editor.MultiCamera
         XRDisplaySubsystem.XRRenderPass s_renderPass = new XRDisplaySubsystem.XRRenderPass();
         XRDisplaySubsystem.XRRenderParameter s_renderParameter= new XRDisplaySubsystem.XRRenderParameter();
 
-
+        /// <summary>
+        /// Show the Render Texture Viewer window.
+        /// </summary>
         [MenuItem ("Window/XR/Mock HMD/Render Texture Viewer")]
-        public static void ShowWindow () 
+        public static void ShowWindow ()
         {
             EditorWindow w = EditorWindow.GetWindow(typeof(RenderPassTextureWindow));
             w.titleContent = new GUIContent("Render Texture Viewer");
@@ -131,17 +135,12 @@ namespace MockHMD.Editor.MultiCamera
         void OnGUI()
         {
             EditorGUILayout.BeginVertical();
-            
+
             if (EditorApplication.isPlaying || EditorApplication.isPaused)
             {
                 var displaySubsystem = GetXRDisplaySubsystem();
                 if (displaySubsystem == null)
                     return;
-
-#if !UNITY_2020_2_OR_NEWER
-                if (displaySubsystem.disableLegacyRenderer)
-                    return;
-#endif
 
                 int renderPassCount = displaySubsystem.GetRenderPassCount();
 
@@ -167,9 +166,8 @@ namespace MockHMD.Editor.MultiCamera
             {
                 EditorGUILayout.LabelField("Must be running in Play mode to see render textures.");
             }
-            
+
             EditorGUILayout.EndVertical();
         }
     }
 }
-#endif

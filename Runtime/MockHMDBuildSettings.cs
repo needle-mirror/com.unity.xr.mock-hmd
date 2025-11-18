@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Management;
@@ -41,7 +41,7 @@ namespace Unity.XR.MockHMD
             /// Gaze at the center of the view
             /// </summary>
             Disabled = 0,
-            
+
             /// <summary>
             /// Gaze at the center of the view
             /// </summary>
@@ -63,11 +63,11 @@ namespace Unity.XR.MockHMD
         /// </summary>
         public RenderMode renderMode;
 
-        [Header("Foveated Rendering")]
         /// <summary>
         /// Enable foveated rendering mode.
         /// </summary>
-#if !UNITY_2022_3 && !UNITY_2023_3_OR_NEWER
+        [Header("Foveated Rendering")]
+#if UNITY_2023_1 || UNITY_2023_2
         [System.NonSerialized]
 #endif
         public bool foveationEnabled = false;
@@ -76,7 +76,7 @@ namespace Unity.XR.MockHMD
         /// Foveation Gaze simulation mode to use
         /// </summary>
         [Tooltip("Select how the gaze directions should be generated.  \nNote: Some GPUs/API don't support having different data for both eyes when rendering using SinglePass, having different patterns in both eyes won't work for them.")]
-#if !UNITY_2022_3 && !UNITY_2023_3_OR_NEWER
+#if UNITY_2023_1 || UNITY_2023_2
         [System.NonSerialized]
 #endif
         public FoveationGazeSimulationMode gazeSimulationMode = FoveationGazeSimulationMode.Disabled;

@@ -25,7 +25,7 @@ namespace Unity.XR.MockHMD
             if (buildSettings != null)
             {
                 MockHMD.SetRenderMode(buildSettings.renderMode);
-                MockHMD.SetFoveationMode(buildSettings.foveationEnabled, 
+                MockHMD.SetFoveationMode(buildSettings.foveationEnabled,
                                          (uint)buildSettings.gazeSimulationMode);
             }
 

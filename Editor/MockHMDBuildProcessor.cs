@@ -1,6 +1,9 @@
-﻿using Unity.XR.MockHMD;
+using Unity.XR.MockHMD;
 using UnityEditor.XR.Management;
 
+/// <summary>
+/// Build processor for Mock HMD XR Plugin
+/// </summary>
 public class MockHMDBuildProcessor : XRBuildHelper<MockHMDBuildSettings>
 {
     /// <inheritdoc />

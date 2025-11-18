@@ -1,4 +1,3 @@
-#if UNITY_2020_2_OR_NEWER
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,6 +10,9 @@ using UnityEditor;
 
 namespace MockHMD.Editor.MultiCamera
 {
+    /// <summary>
+    /// Editor window for adding and configuring additional mock cameras.
+    /// </summary>
     public class AddCameraWindow : EditorWindow
     {
         private List<MockCamera> camerasToRemove = new List<MockCamera>();
@@ -34,8 +36,11 @@ namespace MockHMD.Editor.MultiCamera
             return ret;
         }
 
+        /// <summary>
+        /// Show the Add Camera Window.
+        /// </summary>
         [MenuItem ("Window/XR/Mock HMD/Additional Cameras")]
-        public static void ShowWindow () 
+        public static void ShowWindow ()
         {
             EditorWindow w = EditorWindow.GetWindow(typeof(AddCameraWindow));
             w.titleContent = new GUIContent("Mock HMD Add Camera");
@@ -146,7 +151,7 @@ namespace MockHMD.Editor.MultiCamera
             }
 
             EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
-            
+
             EditorGUILayout.Space();
 
             int camIndex = 0;
@@ -264,4 +269,3 @@ namespace MockHMD.Editor.MultiCamera
         }
     }
 }
-#endif

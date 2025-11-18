@@ -1,4 +1,4 @@
-﻿using System.Runtime.InteropServices;
+using System.Runtime.InteropServices;
 
 namespace Unity.XR.MockHMD
 {
@@ -39,16 +39,17 @@ namespace Unity.XR.MockHMD
         [DllImport(LibraryName, EntryPoint = "NativeConfig_SetMirrorViewCrop")]
         public static extern bool SetMirrorViewCrop(float crop);
 
-#if UNITY_2022_3 || UNITY_2023_3_OR_NEWER
         /// <summary>
         /// Set the foveation mode information
         /// </summary>
         /// <param name="enable">Enable foveation, or not</param>
         /// <param name="gazeSimulatorMode">How should the gaze be simulated</param>
+        /// <returns>true if foveation mode successfully set</returns>
+#if UNITY_2023_1 || UNITY_2023_2
+        public static bool SetFoveationMode(bool enable, uint gazeSimulatorMode) => false;
+#else
         [DllImport(LibraryName, EntryPoint = "NativeConfig_SetFoveationMode")]
         public static extern bool SetFoveationMode(bool enable, uint gazeSimulatorMode);
-#else
-        public static bool SetFoveationMode(bool enable, uint gazeSimulatorMode) => false;
 #endif
     }
 }

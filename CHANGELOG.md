@@ -4,10 +4,21 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [1.4.0-preview.2] - 2024-04-25
- * Added foveated rendering support for Metal.
+## [1.5.0-exp.1] - 2025-11-18
 
-## [1.4.0-preview.1] - 2023-04-04
+### Changed
+
+ * Mnimum supported Unity editor version is updated to 2022.3 LTS.
+
+### Fixed
+
+ * Fix an issue where using MockHMD.SetRenderMode would cause an out of bounds exception when switching from the applications starting RenderMode.
+ * Fixed a crash when trying to change Foveation settings when no XR display provider is initialized.
+ * Fix an issue where errors would be triggered when starting a player with FoveatedRendering on PC
+
+## [1.4.0-preview.2] - 2024-04-25
+
+ * Added foveated rendering support for Metal.
  * Add support for Foveated Rendering API
 
 ## [1.3.1-preview.1] - 2022-12-21
@@ -16,7 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.3.0-preview.1] - 2021-01-25
  * Update XR Plug-In Management to 4.0.1
-  
+
 ## [1.2.0-preview.1] - 2020-10-28
 
  * Added public API for setting the resolution of the eye textures.
