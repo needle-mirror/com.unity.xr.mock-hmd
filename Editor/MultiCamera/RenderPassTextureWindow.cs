@@ -140,7 +140,10 @@ namespace MockHMD.Editor.MultiCamera
             {
                 var displaySubsystem = GetXRDisplaySubsystem();
                 if (displaySubsystem == null)
+                {
+                    EditorGUILayout.EndVertical();
                     return;
+                }
 
                 int renderPassCount = displaySubsystem.GetRenderPassCount();
 

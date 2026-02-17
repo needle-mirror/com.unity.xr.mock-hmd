@@ -10,7 +10,7 @@ namespace Unity.XR.MockHMD.Editor
     {
         private class MockHMDPackageMetadata : IXRPackageMetadata
         {
-            public string packageName => "MockHMD XR Plugin";
+            public string packageName => "Mock HMD XR Plugin";
             public string packageId => "com.unity.xr.mock-hmd";
             public string settingsType => "Unity.XR.MockHMD.MockHMDBuildSettings";
 
@@ -20,7 +20,7 @@ namespace Unity.XR.MockHMD.Editor
 
         private class MockHMDLoaderMetadata : IXRLoaderMetadata
         {
-            public string loaderName => "Mock HMD Loader";
+            public string loaderName => "Mock HMD";
             public string loaderType => "Unity.XR.MockHMD.MockHMDLoader";
 
             private static readonly List<BuildTargetGroup> s_SupportedBuildTargets = new List<BuildTargetGroup>()

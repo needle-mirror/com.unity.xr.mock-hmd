@@ -4,6 +4,19 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.5.0-exp.3] - 2026-02-17
+
+### Fixed
+
+- Fixed an issue to not show error when using **Render Texture Viewer** window after exiting Play Mode. ([XRMOCKB-29](https://issuetracker.unity3d.com/product/unity/issues/guid/XRMOCKB-29))
+
+### Changed
+
+ - Updated the display name of the package to `Mock HMD XR Plugin`.
+ - Updated the display name of the Display Subsystem to `Mock HMD Display`.
+ - Updated the display name of the Input Subsystem to `Mock HMD Head Tracking`.
+ - Update the name of the loader and the XR Plugin Management settings menu to `Mock HMD` for consistency.
+
 ## [1.5.0-exp.2] - 2025-12-15
 
 ### Fixed

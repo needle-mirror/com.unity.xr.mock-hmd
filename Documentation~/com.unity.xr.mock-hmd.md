@@ -22,7 +22,7 @@ Input is not supported. It's up to your application to mock input by moving the 
 
 ## Getting started
 
-Add the Mock HMD Loader to XR Management.
+Add the Mock HMD to XR Management.
 
 ![Loader selection](images/loader-selection.png)
 
@@ -65,16 +65,16 @@ To enable foveated rendering, you must first set the foveated rendering level at
 
 ### Enable foveated rendering
 
-To enable a simulation of foveation on MockHMD:
+To enable a simulation of foveation on Mock HMD:
 
-1. Open the **MockHMD** section of the **XR Plug-in Management** settings (menu: **Edit** > **Project Settings** > **XR Plug-in Management**).
+1. Open the **Mock HMD** section of the **XR Plug-in Management** settings (menu: **Edit** > **Project Settings** > **XR Plug-in Management**).
 2. Enable the **Foveation Enabled** checkbox.
 
-![Foveation Enabled](images/enable-foveated-rendering.png)<br/>*Foveation Enabled in the MockHMD settings.*
+![Foveation Enabled](images/enable-foveated-rendering.png)<br/>*Foveation Enabled in the Mock HMD settings.*
 
 ### Gaze Simulation Mode
 
-![Gaze Simulation Mode](images/gaze-simulation-mode.png)<br/>*Gaze Simulation Mode dropdown in the MockHMD settings.*
+![Gaze Simulation Mode](images/gaze-simulation-mode.png)<br/>*Gaze Simulation Mode dropdown in the Mock HMD settings.*
 
 The mock HMD supports several ways to simulate eye motion in the simulator:
 

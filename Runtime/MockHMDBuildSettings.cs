@@ -6,9 +6,9 @@ using UnityEngine.XR.Management;
 namespace Unity.XR.MockHMD
 {
     /// <summary>
-    /// Build-time settings for MockHMD provider.
+    /// Build-time settings for Mock HMD provider.
     /// </summary>
-    [XRConfigurationData("MockHMD", MockHMDBuildSettings.BuildSettingsKey)]
+    [XRConfigurationData("Mock HMD", MockHMDBuildSettings.BuildSettingsKey)]
     public class MockHMDBuildSettings : ScriptableObject
     {
         /// <summary>

@@ -1,17 +1,17 @@
 {
-        "name": "MockHMD XR Plugin",
+        "name": "Mock HMD XR Plugin",
         "version": "0.1.0-preview.1",
         "libraryName": "UnityMockHMD",
         "displays": [
                 {
-                        "id": "MockHMD Display",
+                        "id": "Mock HMD Display",
                         "supportedMirrorBlitReservedModes" : ["leftEye","rightEye", "sideBySide"]
 
                 }
         ],
         "inputs": [
                 {
-                        "id": "MockHMD Head Tracking"
+                        "id": "Mock HMD Head Tracking"
                 }
         ]
 }

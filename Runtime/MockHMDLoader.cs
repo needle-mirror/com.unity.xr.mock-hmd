@@ -18,8 +18,8 @@ namespace Unity.XR.MockHMD
         /// <inheritdoc />
         public override bool Initialize()
         {
-            CreateSubsystem<XRDisplaySubsystemDescriptor, XRDisplaySubsystem>(s_DisplaySubsystemDescriptors, "MockHMD Display");
-            CreateSubsystem<XRInputSubsystemDescriptor, XRInputSubsystem>(s_InputSubsystemDescriptors, "MockHMD Head Tracking");
+            CreateSubsystem<XRDisplaySubsystemDescriptor, XRDisplaySubsystem>(s_DisplaySubsystemDescriptors, "Mock HMD Display");
+            CreateSubsystem<XRInputSubsystemDescriptor, XRInputSubsystem>(s_InputSubsystemDescriptors, "Mock HMD Head Tracking");
 
             var buildSettings = MockHMDBuildSettings.Instance;
             if (buildSettings != null)
